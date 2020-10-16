@@ -1,0 +1,29 @@
+{
+    "name": "JS Right Click",
+    "version": "1.0",
+    "description": "Enable/Disable JavaScript, Right Click on any website",
+    "default_locale": "en",
+    "background": {
+        "page": "background.html"
+    },
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_icon": "iconInactive.png",
+        "default_title": "JS Right Click"
+    },
+    "options_page": "options.html",
+    "icons": {
+        "128": "icon.png"
+    },
+    "permissions": [
+        "tabs",
+        "http://*/*",
+        "https://*/*",
+        "contentSettings",
+        "storage",
+        "webRequest",
+        "webNavigation",
+        "webRequestBlocking"
+    ],
+    "manifest_version": 2
+}
